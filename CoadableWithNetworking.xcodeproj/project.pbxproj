@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A38B291B1D43AF145E17EA5 /* Pods_CoadableWithNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11D0E2BB74BAB907B20F7B5 /* Pods_CoadableWithNetworkingTests.framework */; };
 		30CA7F582348FCF700A42764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA7F572348FCF700A42764 /* AppDelegate.swift */; };
 		30CA7F5A2348FCF700A42764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA7F592348FCF700A42764 /* ViewController.swift */; };
 		30CA7F5D2348FCF700A42764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CA7F5B2348FCF700A42764 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		30CA7F622348FCF900A42764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CA7F602348FCF900A42764 /* LaunchScreen.storyboard */; };
 		30CA7F6D2348FCF900A42764 /* CoadableWithNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA7F6C2348FCF900A42764 /* CoadableWithNetworkingTests.swift */; };
 		30CA7F782348FCF900A42764 /* CoadableWithNetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA7F772348FCF900A42764 /* CoadableWithNetworkingUITests.swift */; };
+		30CA7F862349001600A42764 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA7F852349001600A42764 /* Friend.swift */; };
+		30CA7F882349022100A42764 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA7F872349022100A42764 /* Connection.swift */; };
+		5C3A2D4E87BD8D03A74AFE36 /* Pods_CoadableWithNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8F32888344321D5325D9D5 /* Pods_CoadableWithNetworking.framework */; };
+		784CEA7F9F655F6A69D6EFED /* Pods_CoadableWithNetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032E52CDA91956907932E3B9 /* Pods_CoadableWithNetworkingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		032E52CDA91956907932E3B9 /* Pods_CoadableWithNetworkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoadableWithNetworkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0933BCF02F25AFE174CF75FD /* Pods-CoadableWithNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoadableWithNetworking.debug.xcconfig"; path = "Target Support Files/Pods-CoadableWithNetworking/Pods-CoadableWithNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		0B503A347425C3CAB958D7EE /* Pods-CoadableWithNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoadableWithNetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-CoadableWithNetworkingTests/Pods-CoadableWithNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		13802591081EFBEBF3C01D9B /* Pods-CoadableWithNetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoadableWithNetworkingUITests.release.xcconfig"; path = "Target Support Files/Pods-CoadableWithNetworkingUITests/Pods-CoadableWithNetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		203AF46E2452F0F13D7FBAEE /* Pods-CoadableWithNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoadableWithNetworking.release.xcconfig"; path = "Target Support Files/Pods-CoadableWithNetworking/Pods-CoadableWithNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		30CA7F542348FCF700A42764 /* CoadableWithNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoadableWithNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CA7F572348FCF700A42764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30CA7F592348FCF700A42764 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		30CA7F732348FCF900A42764 /* CoadableWithNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoadableWithNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CA7F772348FCF900A42764 /* CoadableWithNetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoadableWithNetworkingUITests.swift; sourceTree = "<group>"; };
 		30CA7F792348FCF900A42764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30CA7F852349001600A42764 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		30CA7F872349022100A42764 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		8EA049A887468BBA80CB3851 /* Pods-CoadableWithNetworkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoadableWithNetworkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-CoadableWithNetworkingUITests/Pods-CoadableWithNetworkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB8F32888344321D5325D9D5 /* Pods_CoadableWithNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoadableWithNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C367E98279679915A022B7AD /* Pods-CoadableWithNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoadableWithNetworkingTests.debug.xcconfig"; path = "Target Support Files/Pods-CoadableWithNetworkingTests/Pods-CoadableWithNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F11D0E2BB74BAB907B20F7B5 /* Pods_CoadableWithNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoadableWithNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3A2D4E87BD8D03A74AFE36 /* Pods_CoadableWithNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A38B291B1D43AF145E17EA5 /* Pods_CoadableWithNetworkingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784CEA7F9F655F6A69D6EFED /* Pods_CoadableWithNetworkingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				30CA7F6B2348FCF900A42764 /* CoadableWithNetworkingTests */,
 				30CA7F762348FCF900A42764 /* CoadableWithNetworkingUITests */,
 				30CA7F552348FCF700A42764 /* Products */,
+				621D3C347AA8B0B5B9E659D0 /* Pods */,
+				853FD32A4DE54A2D610C8119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,8 @@
 			children = (
 				30CA7F572348FCF700A42764 /* AppDelegate.swift */,
 				30CA7F592348FCF700A42764 /* ViewController.swift */,
+				30CA7F852349001600A42764 /* Friend.swift */,
+				30CA7F872349022100A42764 /* Connection.swift */,
 				30CA7F5B2348FCF700A42764 /* Main.storyboard */,
 				30CA7F5E2348FCF900A42764 /* Assets.xcassets */,
 				30CA7F602348FCF900A42764 /* LaunchScreen.storyboard */,
@@ -125,6 +148,30 @@
 			path = CoadableWithNetworkingUITests;
 			sourceTree = "<group>";
 		};
+		621D3C347AA8B0B5B9E659D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0933BCF02F25AFE174CF75FD /* Pods-CoadableWithNetworking.debug.xcconfig */,
+				203AF46E2452F0F13D7FBAEE /* Pods-CoadableWithNetworking.release.xcconfig */,
+				C367E98279679915A022B7AD /* Pods-CoadableWithNetworkingTests.debug.xcconfig */,
+				0B503A347425C3CAB958D7EE /* Pods-CoadableWithNetworkingTests.release.xcconfig */,
+				8EA049A887468BBA80CB3851 /* Pods-CoadableWithNetworkingUITests.debug.xcconfig */,
+				13802591081EFBEBF3C01D9B /* Pods-CoadableWithNetworkingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		853FD32A4DE54A2D610C8119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F32888344321D5325D9D5 /* Pods_CoadableWithNetworking.framework */,
+				F11D0E2BB74BAB907B20F7B5 /* Pods_CoadableWithNetworkingTests.framework */,
+				032E52CDA91956907932E3B9 /* Pods_CoadableWithNetworkingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30CA7F7C2348FCF900A42764 /* Build configuration list for PBXNativeTarget "CoadableWithNetworking" */;
 			buildPhases = (
+				B7E206EAC78FCC5FA92BF76B /* [CP] Check Pods Manifest.lock */,
 				30CA7F502348FCF700A42764 /* Sources */,
 				30CA7F512348FCF700A42764 /* Frameworks */,
 				30CA7F522348FCF700A42764 /* Resources */,
+				A73CDE0774009CD66E80481A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30CA7F7F2348FCF900A42764 /* Build configuration list for PBXNativeTarget "CoadableWithNetworkingTests" */;
 			buildPhases = (
+				84986057700B4833C97B0092 /* [CP] Check Pods Manifest.lock */,
 				30CA7F642348FCF900A42764 /* Sources */,
 				30CA7F652348FCF900A42764 /* Frameworks */,
 				30CA7F662348FCF900A42764 /* Resources */,
@@ -167,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30CA7F822348FCF900A42764 /* Build configuration list for PBXNativeTarget "CoadableWithNetworkingUITests" */;
 			buildPhases = (
+				A7335B8FD8E35D1A81386641 /* [CP] Check Pods Manifest.lock */,
 				30CA7F6F2348FCF900A42764 /* Sources */,
 				30CA7F702348FCF900A42764 /* Frameworks */,
 				30CA7F712348FCF900A42764 /* Resources */,
@@ -251,13 +302,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84986057700B4833C97B0092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoadableWithNetworkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7335B8FD8E35D1A81386641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoadableWithNetworkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A73CDE0774009CD66E80481A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoadableWithNetworking/Pods-CoadableWithNetworking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoadableWithNetworking/Pods-CoadableWithNetworking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoadableWithNetworking/Pods-CoadableWithNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E206EAC78FCC5FA92BF76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoadableWithNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30CA7F502348FCF700A42764 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CA7F862349001600A42764 /* Friend.swift in Sources */,
 				30CA7F5A2348FCF700A42764 /* ViewController.swift in Sources */,
 				30CA7F582348FCF700A42764 /* AppDelegate.swift in Sources */,
+				30CA7F882349022100A42764 /* Connection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +569,7 @@
 		};
 		30CA7F7D2348FCF900A42764 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0933BCF02F25AFE174CF75FD /* Pods-CoadableWithNetworking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +588,7 @@
 		};
 		30CA7F7E2348FCF900A42764 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203AF46E2452F0F13D7FBAEE /* Pods-CoadableWithNetworking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +607,7 @@
 		};
 		30CA7F802348FCF900A42764 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C367E98279679915A022B7AD /* Pods-CoadableWithNetworkingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +629,7 @@
 		};
 		30CA7F812348FCF900A42764 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B503A347425C3CAB958D7EE /* Pods-CoadableWithNetworkingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +651,7 @@
 		};
 		30CA7F832348FCF900A42764 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA049A887468BBA80CB3851 /* Pods-CoadableWithNetworkingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +672,7 @@
 		};
 		30CA7F842348FCF900A42764 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13802591081EFBEBF3C01D9B /* Pods-CoadableWithNetworkingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

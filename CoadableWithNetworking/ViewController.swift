@@ -7,14 +7,52 @@
 //
 
 import UIKit
+import SVProgressHUD
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
+    var friends = [Friend]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        SVProgressHUD.show()
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        DispatchQueue.global().async {
+            
+            do {
+                let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")
+                let data = try Data(contentsOf: url!)
+                
+                let jsonDecoder = JSONDecoder()
+                jsonDecoder.dateDecodingStrategy = .iso8601
+                let downloadedJSON = try jsonDecoder.decode([Friend].self, from: data)
+                print(downloadedJSON)
+                
+                DispatchQueue.main.async {
+                    self.friends = downloadedJSON
+                    self.tableView.reloadData()
+                    SVProgressHUD.dismiss()
+                }
+            } catch {
+                fatalError("Error occured")
+            }
+        }
     }
 
-
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friends.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let friend = friends[indexPath.row]
+        cell.textLabel?.text = friend.name
+        cell.detailTextLabel?.text = friend.friends.map {$0.name}.joined(separator: ",")
+        
+        return cell
+    }
 }
 
