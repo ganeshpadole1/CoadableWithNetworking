@@ -48,7 +48,7 @@
                             <outlet property="delegate" destination="L5N-1i-dCB" id="UYq-lg-a5H"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Friends" largeTitleDisplayMode="always" id="cvN-yZ-Wts"/>
+                    <navigationItem key="navigationItem" title="Friends" largeTitleDisplayMode="never" id="cvN-yZ-Wts"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eb-Gi-HFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
