@@ -71,6 +71,7 @@ class ViewController: UITableViewController,UISearchResultsUpdating {
             self.tableView.reloadData()
         }
         
+        print("welcome")
     }
     
 }
