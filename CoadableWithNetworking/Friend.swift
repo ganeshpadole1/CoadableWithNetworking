@@ -22,3 +22,17 @@ struct Friend: Codable {
     let tags: [String]
     let friends: [Connection]
 }
+
+extension Array where Element == Friend {
+    func matching(_ text: String?) -> [Friend] {
+        if let text = text, text.count > 0 {
+            return self.filter {
+                $0.name.localizedCaseInsensitiveContains(text) ||
+                    $0.company.localizedCaseInsensitiveContains(text) ||
+                    $0.address.localizedCaseInsensitiveContains(text)
+            }
+        } else {
+            return self
+        }
+    }
+}

@@ -38,8 +38,7 @@ class ViewController: UITableViewController,UISearchResultsUpdating {
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.dateDecodingStrategy = .iso8601
                 let downloadedJSON = try jsonDecoder.decode([Friend].self, from: data)
-                print(downloadedJSON)
-                
+               
                 DispatchQueue.main.async {
                     self.friends = downloadedJSON
                     self.filteredFriends = downloadedJSON
@@ -66,17 +65,12 @@ class ViewController: UITableViewController,UISearchResultsUpdating {
     }
     
     func updateSearchResults(for searchController: UISearchController) {
-        if let text = searchController.searchBar.text, text.count > 0 {
-          filteredFriends = friends.filter {
-                $0.name.contains(text) ||
-                $0.company.contains(text) ||
-                $0.address.contains(text)
-            }
-        } else {
-            filteredFriends = friends
+       
+        filteredFriends = friends.matching(searchController.searchBar.text)
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
         }
         
-        tableView.reloadData()
     }
     
 }
