@@ -21,6 +21,9 @@ struct Friend: Codable {
     let about: String
     let tags: [String]
     let friends: [Connection]
+    var friendList: String {
+       return friends.map {$0.name}.joined(separator: ",")
+    }
 }
 
 extension Array where Element == Friend {

@@ -29,26 +29,18 @@ class ViewController: UITableViewController,UISearchResultsUpdating {
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
         
-        DispatchQueue.global().async {
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.dateDecodingStrategy = .iso8601
+        
+        let url = "https://www.hackingwithswift.com/samples/friendface.json"
+        jsonDecoder.decode([Friend].self, fromURL: url) { myFriendList in
+            self.friends = myFriendList
+            self.filteredFriends = myFriendList
             
-            do {
-                let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")
-                let data = try Data(contentsOf: url!)
-                
-                let jsonDecoder = JSONDecoder()
-                jsonDecoder.dateDecodingStrategy = .iso8601
-                let downloadedJSON = try jsonDecoder.decode([Friend].self, from: data)
-               
-                DispatchQueue.main.async {
-                    self.friends = downloadedJSON
-                    self.filteredFriends = downloadedJSON
-                    self.tableView.reloadData()
-                    SVProgressHUD.dismiss()
-                }
-            } catch {
-                fatalError("Error occured")
-            }
+            SVProgressHUD.dismiss()
+            self.tableView.reloadData()
         }
+   
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,7 +51,7 @@ class ViewController: UITableViewController,UISearchResultsUpdating {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let friend = filteredFriends[indexPath.row]
         cell.textLabel?.text = friend.name
-        cell.detailTextLabel?.text = friend.friends.map {$0.name}.joined(separator: ",")
+        cell.detailTextLabel?.text = friend.friendList
         
         return cell
     }
