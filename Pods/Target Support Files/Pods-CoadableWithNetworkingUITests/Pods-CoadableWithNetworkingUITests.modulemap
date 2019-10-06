@@ -1,0 +1,6 @@
+framework module Pods_CoadableWithNetworkingUITests {
+  umbrella header "Pods-CoadableWithNetworkingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
